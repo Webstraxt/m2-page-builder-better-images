@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <field name="explicit_width_desktop" sortOrder="40" formElement="input">
+            <settings>
+                <label translate="true">Explicit Width (Desktop)</label>
+                <additionalClasses>
+                    <class name="admin__field-small">true</class>
+                </additionalClasses>
+                <addAfter translate="true">px</addAfter>
+                <dataType>text</dataType>
+                <validation>
+                    <rule name="validate-string" xsi:type="boolean">true</rule>
+                </validation>
+            </settings>
+        </field>
+        <field name="explicit_height_desktop" sortOrder="50" formElement="input">
+            <settings>
+                <label translate="true">Explicit Height (Desktop)</label>
+                <additionalClasses>
+                    <class name="admin__field-small">true</class>
+                </additionalClasses>
+                <addAfter translate="true">px</addAfter>
+                <dataType>text</dataType>
+                <validation>
+                    <rule name="validate-string" xsi:type="boolean">true</rule>
+                </validation>
+            </settings>
+        </field>
+        <field name="explicit_width_mobile" sortOrder="60" formElement="input">
+            <settings>
+                <label translate="true">Explicit Width (Mobile)</label>
+                <additionalClasses>
+                    <class name="admin__field-small">true</class>
+                </additionalClasses>
+                <addAfter translate="true">px</addAfter>
+                <dataType>text</dataType>
+                <validation>
+                    <rule name="validate-string" xsi:type="boolean">true</rule>
+                </validation>
+            </settings>
+        </field>
+        <field name="explicit_height_mobile" sortOrder="70" formElement="input">
+            <settings>
+                <label translate="true">Explicit Height (Mobile)</label>
+                <additionalClasses>
+                    <class name="admin__field-small">true</class>
+                </additionalClasses>
+                <addAfter translate="true">px</addAfter>
+                <dataType>text</dataType>
+                <validation>
+                    <rule name="validate-string" xsi:type="boolean">true</rule>
+                </validation>
+            </settings>
+        </field>
+        <field name="image_loading" sortOrder="80" formElement="select">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="string">lazy</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Image Loading</label>
+                <dataType>text</dataType>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options>
+                            <option name="0" xsi:type="array">
+                                <item name="value" xsi:type="string">lazy</item>
+                                <item name="label" xsi:type="string" translate="true">Lazy</item>
+                            </option>
+                            <option name="1" xsi:type="array">
+                                <item name="value" xsi:type="string">eager</item>
+                                <item name="label" xsi:type="string" translate="true">Eager</item>
+                            </option>
+                        </options>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+    </fieldset>
+</form>
